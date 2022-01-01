@@ -1,0 +1,28 @@
+@media screen and (max-width: 600px) {
+	body {
+	}
+	.links {
+		position: absolute;
+		top: 100%;
+		flex-direction: column;
+		background-color: var(--navbar);
+		width: 100%;
+		left: 0;
+		overflow-y: hidden;
+		height: 0;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.links.show{
+		height: 80vh;
+	}
+
+	.links > * {
+		margin-bottom: 2rem;
+	}
+
+	.menu {
+		display: block !important;
+	}
+}

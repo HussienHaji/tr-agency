@@ -1,12 +1,14 @@
+/* Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url(./media.css);
 
+/* ----------------------------------Global */
 *,
 *::before,
 *::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -18,33 +20,115 @@
 	--bg-transparent: hsla(0, 0%, 0%, 0.47);
 	--bg-transparent-2: hsla(0, 0%, 0%, 0.62);
 	--footer: #111111;
-	--navbar-: hsla(0, 0%, 0%, 0.38);
+	--navbar: hsla(0, 0%, 0%, 0.38);
 }
 
 html {
 	font-size: 62.5%;
 }
 
+body {
+	font-family: "Poppins", sans-serif;
+}
+
 a,
 a:active,
 a:visited {
 	text-decoration: none;
-	color: #000;
+}
+
+button {
+	border: 0;
+	cursor: pointer;
+}
+
+img {
+	width: 100%;
+	object-fit: cover;
+}
+
+.btn {
+	padding: 0.8rem 1.8rem;
+	border-radius: 30rem;
+	font-size: 2.4em;
+}
+
+.btn a {
+	color: inherit;
+}
+
+.btn-primary {
+	background-color: var(--clr-primary);
+	color: var(--text-white);
+	border: 0.5rem solid var(--clr-primary);
+	transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+	background-color: transparent;
+	color: var(--clr-primary);
+}
+
+.container {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 4000px;
+	padding: 0 4rem;
 }
 
 ul {
 	list-style-type: none;
 }
 
+.lni {
+	color: var(--text-white);
+	font-size: 2.4em;
+	background-color: #000;
+}
+
+/* -----------------------------Navbar */
+
 .navbar {
 	width: 100%;
-	padding: 1rem 2rem;
+	padding: 3rem 0;
+	background-color: var(--navbar);
+	border-bottom: 0.5em solid #fff;
+	position: fixed;
+}
+
+.navbar-row {
 	display: flex;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
+}
+
+.logo-container {
+	width: 10rem;
+	cursor: pointer;
 }
 
 .links {
 	display: flex;
 	align-items: center;
 }
+
+.link {
+	margin-right: 2rem;
+	font-size: 2.4em;
+	color: var(--text-white);
+	transition: color 0.2s ease;
+}
+
+.link:hover {
+	color: var(--clr-primary);
+}
+
+.menu {
+	font-size: 4em;
+	color: var(--text-white);
+	cursor: pointer;
+	display: none;
+
+}
+
+/* ------------------------------hearo */
